@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "wxmlLearning/wxmlLearning"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#00FF00",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#ffff00","borderStyle": "white",
+   "position":"top",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "http://download.easyicon.net/png/1201101/64/home_64.365714285714px_1201101_easyicon.net.png",
+      "selectedIconPath": "http://download.easyicon.net/png/1200646/64/home_74.315018315018px_1200646_easyicon.net.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "详情",
+      "iconPath": "http://download.easyicon.net/png/30374/64/evernote_64px_30374_easyicon.net.png",
+      "selectedIconPath": "http://download.easyicon.net/png/29618/64/blinklist_64px_29618_easyicon.net.png"
+    }
+    ]
+  }, 
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
 }

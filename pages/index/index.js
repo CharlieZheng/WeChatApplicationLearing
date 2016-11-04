@@ -2,6 +2,7 @@
 //获取应用实例
 var app = getApp()
 var changePetName = require("changePetName.js")
+// var changePetName = require('../../modules/changePetName.js')
 Page({
   data: {
     motto: 'Hello World',
@@ -33,6 +34,9 @@ Page({
   },
   Click: function () {
     console.log('点击了我');
+     wx.navigateTo({
+      url: '../../wxmlLearning/wxmlLearning'
+    })
   },
   changeName : function () {
     this.setData ({

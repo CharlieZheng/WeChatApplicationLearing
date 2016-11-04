@@ -1,0 +1,9 @@
+<template name="whatever">
+    <view>
+    CompanyName: {{name}} , and Address: {{addr}}
+    </view>
+</template>
+
+<template is="whatever" data="{{...comp1}}"></template>
+<template is="whatever" data="{{...comp2}}"></template>
+<template is="whatever" data="{{...comp3}}"></template>
